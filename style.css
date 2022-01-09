@@ -1,5 +1,6 @@
 body {
-    background-color: #050505; /*цвет фона*/
+    background: url(https://st.depositphotos.com/1621629/3678/i/600/depositphotos_36784009-stock-photo-president-barack-obama.jpg);
+    background-size: cover;
 }
 .cube {
     position: relative;
@@ -7,6 +8,7 @@ body {
     height: 300px;
     transform-style: preserve-3d;
     animation: animate 10s linear infinite; /*быстрота-плавно-бесконечно*/
+    margin: 20%;
 }
 
 @keyframes animate {
@@ -32,11 +34,28 @@ body {
     width: 100%;
     height: 100%;    
     transform-style: preserve-3d;
-    background: linear-gradient(#151515, #00ec00);
-
+    background: url(https://c0.klipartz.com/pngpicture/710/995/gratis-png-publico-de-barack-obama-presidente-de-los-estados-unidos-estimado-presidente-obama-barack-obama-thumbnail.png);
+    background-size: cover;
     transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
-
-    
-
+    box-shadow: 0 0 400px rgb(82, 123, 206, 0.5);
 
 }
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: url(https://c0.klipartz.com/pngpicture/710/995/gratis-png-publico-de-barack-obama-presidente-de-los-estados-unidos-estimado-presidente-obama-barack-obama-thumbnail.png);
+    background-size: cover;
+    transform: rotateX(90deg) translateZ(150px);
+    }
+.main {
+    display: flex;
+    justify-content: center; /*выравнивание по горизонтали*/
+    align-items: center; /*выравнивание по вертикали*/
+    min-height: 100vh; /*vh - video height*/
+
+}
+
